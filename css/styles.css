@@ -188,10 +188,6 @@ body {
     }
 }
 
-section {
-    padding: 20px;
-}
-
 /* research section*/
 .section-container {
     display: flex;
@@ -201,6 +197,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
+    margin: 40px 20px;
 }
 
 .left-section {
@@ -296,7 +293,7 @@ section {
 
 /* Publication Section */
 .publication-section {
-    margin: 50px auto;
+    margin: 40px 20px;
     background: white;
     padding: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -371,7 +368,8 @@ section {
 
 /* team section */
 #team {
-    padding: 50px 0;
+    margin: 30px;
+    padding: 30px 0;
     background-color: #fff;
     text-align: center;
 }
@@ -439,6 +437,87 @@ section {
         align-items: center;
     }
 }
+
+/* news and events */
+.custom-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.custom-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.custom-slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.custom-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.custom-cta-button {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.custom-cta-button:hover {
+    background: #eee;
+}
+
+/* Navigation Arrows */
+.custom-nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.custom-prev {
+    left: 10px;
+}
+
+.custom-next {
+    right: 10px;
+}
+
+.custom-nav-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
 
 /* the rest*/
 .team-member {
