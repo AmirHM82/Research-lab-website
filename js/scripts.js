@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleButton.style.padding = '10px';
     toggleButton.style.display = 'none';
 
-    document.querySelector('.container').appendChild(toggleButton);
+    document.querySelector('.nav-container').appendChild(toggleButton);
 
     toggleButton.addEventListener('click', () => {
         navLinks.classList.toggle('active');

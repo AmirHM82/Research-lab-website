@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Lab</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
+            <div class="nav-container">
                 <a href="#" class="logo">BioLab</a>
                 <ul class="nav-links">
                     <li><a href="#research">Research</a></li>
@@ -20,14 +21,14 @@
                     <li><a href="#opportunities">Join Us</a></li>
                 </ul>
             </div>
-        </nav>        
+        </nav>
 
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Digital solutions for laboratories</h1>
                 <p>We build custom software for laboratory instrument manufacturers, laboratories, and software providers.</p>
-                <a href="#solutions" class="cta-button">Find out more!</a>
+                <a href="#research" class="cta-button">Find out more!</a>
             </div>
         </section>
     </header>
@@ -64,22 +65,92 @@
     </section>
 
     <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="link-to-publication1.pdf">Publication Title 1</a></li>
-            <li><a href="link-to-publication2.pdf">Publication Title 2</a></li>
-            <!-- Add more publications as needed -->
-        </ul>
+        <!-- Publication List Section -->
+        <div class="publication-section">
+            <div class="publication-title">📚 Research Publications</div>
+
+            <table class="publication-table">
+                <tr>
+                    <th>Title</th>
+                    <th>Journal/Conference</th>
+                    <th>Year</th>
+                    <th>DOI</th>
+                </tr>
+                <tr>
+                    <td>AI in Healthcare</td>
+                    <td>Journal of Medical AI</td>
+                    <td>2024</td>
+                    <td><a href="#">10.1234/abc123</a></td>
+                </tr>
+                <tr>
+                    <td>Quantum Computing Trends</td>
+                    <td>Int. Conf. on Quantum Tech</td>
+                    <td>2023</td>
+                    <td><a href="#">10.5678/def456</a></td>
+                </tr>
+                <tr>
+                    <td>Machine Learning for Biology</td>
+                    <td>Bioinformatics Journal</td>
+                    <td>2022</td>
+                    <td><a href="#">10.9101/ghi789</a></td>
+                </tr>
+                <tr>
+                    <td>Deep Learning for Finance</td>
+                    <td>FinTech AI Conf.</td>
+                    <td>2021</td>
+                    <td><a href="#">10.2345/jkl012</a></td>
+                </tr>
+                <tr>
+                    <td>Ethics in AI</td>
+                    <td>AI & Society Journal</td>
+                    <td>2020</td>
+                    <td><a href="#">10.6789/mno345</a></td>
+                </tr>
+            </table>
+
+            <a href="#" class="view-more">🔍 View More</a>
+        </div>
     </section>
 
     <section id="team">
-        <h2>Our Team</h2>
-        <div class="team-member">
-            <img src="images/team/member1.jpg" alt="Member Name">
-            <h3>Member Name</h3>
-            <p>Role and research interests.</p>
+        <div class="team-container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <img src="images/team/Reza_Fallahi.png" alt="Member 1">
+                    <h3>Jane Doe</h3>
+                    <p>CEO & Founder</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <img src="images/team/Mehrdad_Kalhor.png" alt="Member 2">
+                    <h3>John Smith</h3>
+                    <p>Lead Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <!-- Additional team members can be added in the same format -->
+                <div class="team-member">
+                    <img src="images/team/Ahmad_Hamid.png" alt="Member 2">
+                    <h3>John Smith</h3>
+                    <p>Lead Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Add more team members as needed -->
     </section>
 
     <section id="news">
@@ -118,5 +189,6 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
