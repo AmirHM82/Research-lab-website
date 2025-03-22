@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
     font-family: Arial, sans-serif;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 html {
@@ -11,10 +18,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 /* navbar and header */
@@ -191,7 +195,7 @@ body {
 /* research section*/
 .section-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background: white;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -317,6 +321,7 @@ body {
     margin-top: 20px;
 }
 
+/* Table headers styling */
 .publication-table th, .publication-table td {
     padding: 12px;
     text-align: left;
@@ -329,6 +334,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Rows styling */
 .publication-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -338,7 +344,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-/* Button */
+/* View More button */
 .view-more {
     display: inline-block;
     background: #007bff;
@@ -356,15 +362,45 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .publication-section {
-        width: 95%;
+    .publication-table {
+        display: block;
     }
 
-    .publication-table th, .publication-table td {
-        font-size: 0.9em;
-        padding: 8px;
+    .publication-table tbody {
+        display: block;
+    }
+
+    .publication-table th,
+    .publication-table td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .publication-table tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .publication-table th {
+        display: none; /* Hide the headers on mobile */
+    }
+
+    .publication-table td {
+        display: flex;
+        justify-content: space-between;
+        border: none; /* Remove the border for better readability */
+        text-align: left;
+    }
+
+    /* Make each row take full width and align properly */
+    .publication-table td a {
+        text-decoration: none;
+        color: #007bff;
     }
 }
+
 
 /* team section */
 #team {
