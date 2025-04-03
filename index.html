@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Research Lab</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,10 +13,11 @@
             <div class="nav-container">
                 <a href="#" class="logo">BioLab</a>
                 <ul class="nav-links">
+                    <li><a href="#news">News & Events</a></li>
                     <li><a href="#research">Research</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#news">News & Events</a></li>
+                    <li><a href="#team">Students</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#opportunities">Join Us</a></li>
                 </ul>
@@ -138,25 +139,23 @@
         </div>
     </section>
     
-
     <section id="team">
         <div class="team-container">
-            <h2>Students</h2>
-            <div class="team-members">
-                
-            </div>
-        </div>
-    </section>
-
-    <section id="team">
-        <div class="team-container">
-            <h2>Graduates</h2>
-            <div class="team-members">
+            <h2>Students & Graduates</h2>
+            <div class="team-members"  id="team-members">
+                <div class="team-member">
+                    <img src="images/team/Mobina_Momeni.png" alt="Mobina Momeni">
+                    <h3>Mobina Momeni</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mobi-%F0%9F%A4%AB-8913b8280/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/binameni"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
                 <!-- Team Member 1 -->
                 <div class="team-member">
-                    <img src="images/team/Reza_Fallahi.png" alt="Member 1">
+                    <img src="images/team/Reza_Fallahi.png" alt="Reza Fallahi">
                     <h3>Reza Fallahi</h3>
-                    <p>CEO & Founder</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -165,9 +164,8 @@
                 </div>
                 <!-- Team Member 2 -->
                 <div class="team-member">
-                    <img src="images/team/Mehrdad_Kalhor.png" alt="Member 2">
+                    <img src="images/team/Mehrdad_Kalhor.png" alt="Mehrdad Kalhor">
                     <h3>Mehrdad Kalhor</h3>
-                    <p>Lead Developer</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -176,19 +174,17 @@
                 </div>
                 <!-- Additional team members can be added in the same format -->
                 <div class="team-member">
-                    <img src="images/team/Ahmad_Hamid.png" alt="Member 2">
+                    <img src="images/team/Ahmad_Hamid.png" alt="Ahmad Hamid">
                     <h3>Ahmad Hamid</h3>
-                    <p>Lead Developer</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/ahmad-hamid-68633b247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmad-hamid-68633b247"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/team/Fatemeh_Mahmoud_Abadi.png" alt="Member 2">
+                    <img src="images/team/Fatemeh_Mahmoud_Abadi.png" alt="Fatemeh Mahmoud Abadi">
                     <h3>Fatemeh Mahmoud Abadi</h3>
-                    <p>Lead Developer</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -196,9 +192,8 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/team/Hadis_Ghorbani.png" alt="Member 2">
+                    <img src="images/team/Hadis_Ghorbani.png" alt="Hadis Ghorbani">
                     <h3>Hadis Ghorbani</h3>
-                    <p>Lead Developer</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -206,9 +201,8 @@
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/team/Mahan_Mousavi.png" alt="Member 2">
+                    <img src="images/team/Mahan_Mousavi.png" alt="Mahan Mousavi">
                     <h3>Mahan Mousavi</h3>
-                    <p>Lead Developer</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -218,13 +212,65 @@
             </div>
         </div>
     </section>
+
+    <section id="gallery">
+        <div class="gallery-slider-container">
+            <div class="gallery-slider">
+              <!-- <div class="gallery-slide">
+                <img src="path/to/image1.jpg" alt="Gallery image 1">
+              </div> -->
+            </div>
+            <button class="gallery-slider-btn gallery-prev">❮</button>
+            <button class="gallery-slider-btn gallery-next">❯</button>
+          </div>          
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section" id="contact">
+        <h2 class="contact-us-title">Contact Us</h2>
+        <form class="contact-us-form" id="contactUsForm">
+            <div class="contact-us-form-group">
+                <label for="contact-us-name">Name:</label>
+                <input type="text" id="contact-us-name" name="name" required>
+            </div>
+            <div class="contact-us-form-group">
+                <label for="contact-us-email">Email:</label>
+                <input type="email" id="contact-us-email" name="email" required>
+            </div>
+            <div class="contact-us-form-group">
+                <label for="contact-us-message">Message:</label>
+                <textarea id="contact-us-message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="contact-us-submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us-section" id="opportunities">
+        <h2 class="join-us-title">Join Us</h2>
+        <form class="join-us-form" id="joinUsForm">
+            <div class="join-us-form-group">
+                <label for="join-us-name">Name:</label>
+                <input type="text" id="join-us-name" name="name" required>
+            </div>
+            <div class="join-us-form-group">
+                <label for="join-us-email">Email:</label>
+                <input type="email" id="join-us-email" name="email" required>
+            </div>
+            <div class="join-us-form-group">
+                <label for="join-us-resume">Upload Resume:</label>
+                <input type="file" id="join-us-resume" name="resume" required>
+            </div>
+            <button type="submit" class="join-us-submit-button">Apply Now</button>
+        </form>
+    </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Research Lab. All rights reserved.</p>
+        <p>&copy; Network lab. All rights reserved.</p>
     </footer>
 
-    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
