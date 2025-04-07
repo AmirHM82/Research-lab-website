@@ -78,20 +78,6 @@ function updateCustomCarousel() {
     customCarousel.style.transform = `translateX(-${customCurrentIndex * 100}%)`;
 }
 
-// Contact Us Form Submission
-document.getElementById('contactUsForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Thank you for contacting us!');
-    // Here, you can add code to handle form submission, such as sending data to a server
-});
-
-// Join Us Form Submission
-document.getElementById('joinUsForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Your application has been submitted!');
-    // Here, you can add code to handle form submission, such as sending data to a server
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const imagePaths = [
         'images/Gallery/20240309_115334.jpg',
@@ -215,3 +201,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startSlideShow();
 });
+
+document.getElementById('searchBox').addEventListener('input', function() {
+    let searchQuery = this.value.toLowerCase();
+    let profiles = document.querySelectorAll('.teacher-profile');
+
+    profiles.forEach(function(profile) {
+      let department = profile.getAttribute('data-department').toLowerCase();
+      if (department.includes(searchQuery)) {
+        profile.style.display = 'block';
+      } else {
+        profile.style.display = 'none';
+      }
+    });
+});
+
+function truncateTitles() {
+    const isMobile = window.innerWidth <= 768;
+    const titleCells = document.querySelectorAll('.table-cell');
+
+    titleCells.forEach(cell => {
+        const fullText = cell.getAttribute('data-full') || cell.textContent;
+        if (isMobile) {
+            const words = fullText.split(" ");
+            const shortText = words.slice(0, 3).join(" ") + (words.length > 3 ? "..." : "");
+            cell.setAttribute('data-full', fullText); // store original
+            cell.textContent = shortText;
+        } else {
+            if (cell.getAttribute('data-full')) {
+                cell.textContent = cell.getAttribute('data-full');
+            }
+        }
+    });
+}
+
+// Run on load and resize
+window.addEventListener('load', truncateTitles);
+window.addEventListener('resize', truncateTitles);

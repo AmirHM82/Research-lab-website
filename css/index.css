@@ -362,6 +362,12 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .table-cell {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
     .publication-table {
         display: block;
     }
@@ -471,6 +477,7 @@ body {
     .team-members {
         flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
     }
 }
 
@@ -637,6 +644,10 @@ body {
     background-color: #286090;
 }
 
+#gallery {
+    margin-bottom: 30px;
+}
+
 .gallery-slider-container {
     position: relative;
     width: 100%;
@@ -644,36 +655,36 @@ body {
     height: 450px;
     margin: auto;
     overflow: hidden;
-  }
+}
   
-  .gallery-slider {
+.gallery-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
-  }
+}
   
-  .gallery-slider .gallery-slide {
+.gallery-slider .gallery-slide {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
+}
   
-  .gallery-slider img {
+.gallery-slider img {
     flex-shrink: 0;
     width: 100%;
     height: auto;
     object-fit: contain;
-  }
+}
 
-  .gallery-slider .gallery-slide img {
+.gallery-slider .gallery-slide img {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
-  }
+}
   
-  .gallery-slider-btn {
+.gallery-slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -684,15 +695,78 @@ body {
     cursor: pointer;
     padding: 10px;
     z-index: 100;
-  }
+}
   
-  .gallery-prev {
+.gallery-prev {
     left: 10px;
-  }
+}
   
-  .gallery-next {
+.gallery-next {
     right: 10px;
-  }
+}
+
+.teacher-showcase {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.teacher-showcase h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.teacher-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.teacher-profile {
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+  
+.teacher-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+  
+.teacher-profile h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: #333;
+}
+  
+.teacher-profile p {
+    margin: 0 0 15px;
+    color: #777;
+}
+  
+.profile-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+  
+.profile-links a:hover {
+    background-color: #0056b3;
+}
+
 
 /* the rest*/
 .team-member {
